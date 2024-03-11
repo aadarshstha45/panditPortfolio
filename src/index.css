@@ -1,0 +1,33 @@
+:root {
+  --facebook-bg-color: #3b5998; /* Default background color for Facebook */
+  --twitter-bg-color: #1da1f2; /* Default background color for Twitter */
+  --instagram-bg-color: #c13584; /* Default background color for Instagram */
+  --linkedin-bg-color: #0077b5; /* Default background color for LinkedIn */
+}
+
+.socialIcons {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.facebookIcon:hover {
+  background-color: var(--facebook-bg-color);
+  color: white;
+}
+
+.twitterIcon:hover {
+  background-color: var(--twitter-bg-color);
+  color: white;
+}
+
+.instagramIcon:hover {
+  background-color: var(--instagram-bg-color);
+  color: white;
+}
+
+.linkedInIcon:hover {
+  background-color: var(--linkedin-bg-color);
+  color: white;
+}
