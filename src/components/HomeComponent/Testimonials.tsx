@@ -14,6 +14,7 @@ import Blank from "../../assets/images/profile.png";
 import { useFetchTestimonial } from "../../api/all-service";
 
 import Reveal from "../../layouts/Reveal";
+import { CKEditor } from "../CKEditor";
 
 export default function Testimonials() {
   const { data: testimonials, isLoading } = useFetchTestimonial();
@@ -66,13 +67,8 @@ export default function Testimonials() {
                         >
                           {name}
                         </Text>
-                        <Text
-                          textColor={"orange.400"}
-                          mt={2}
-                          fontSize={{ base: "md", md: "lg" }}
-                          textAlign={"center"}
-                        >
-                          {message}
+                        <Text textColor={"gray.300"}>
+                          <CKEditor data={message} />
                         </Text>
                       </CardBody>
                     </Card>

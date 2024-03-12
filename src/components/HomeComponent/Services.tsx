@@ -71,6 +71,7 @@ export default function Services() {
                           >
                             {title}
                           </Heading>
+
                           <CKEditor data={description} />
                         </CardBody>
                       </Card>
